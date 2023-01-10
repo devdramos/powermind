@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha?</title>
+
+    <!--Link CSS externo-->
+    <link rel="stylesheet" href="../css/estilo-login.css">
+
+	<!--Bootstrap-->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    {{!-- Link de fonte --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+
+    {{!-- Link de fonte --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body style="background-color:#232946">
+    <div class="container-fluid">
+    <div class="row no-gutter justify-content-around">
+        <!-- The image half -->
+        <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+        <!-- The content half -->
+        <div class="col-md-6" id="colunacor">
+            <div class="login d-flex align-items-center">
+
+                <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8 mx-auto">
+                            <h3 class="display-4">Você esqueceu a senha!</h3>
+                            <p class="text mb-4" id="text-pqn">Seja bem-vindo, vamos te ajudar!</p>
+                            <form action="/usuario/esqsenha" method="POST">
+                                  <div class="form-group mb-3">
+                                    <label for="email" class="form-label">Digite seu email:</label>
+                                    <input type="email" class="form-control rounded-pill border-0 shadow-sm px-4" id="email" aria-describedby="emailHelp" name="email" placeholder="Digite seu email">
+                                  </div>
+                                 <div class="form-group pt-3 mb-3">
+                                    <p>Pergunta de segurança:</p>
+                                    <select name="pergunta">
+                                    <option >qual o nome do seu cachorro?</option>
+                                    <option >qual o nome da sua vó?</option>
+                                    <option >qual o nome do seu gato?</option>
+                                    <option >qual seu filme favorito?</option>
+                                    <option >qual sua cor favorita?</option>
+                                    <option >qual seu esporte favorito?</option>
+                                    <option >qual seu idolo?</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group mb-3 pt-3">
+                                    <label for="titulo" class="form-label">Resposta:</label>
+                                    <input type="password" class="form-control rounded-pill border-0 shadow-sm px-4" id="pergunta" aria-describedby="emailHelp" name="pergunta" placeholder="Digite sua resposta">
+                                  </div>
+                                <button type="submit" class="btn btn-primary btn-block mb-2 rounded-pill shadow-sm">Enviar</button>
+                                <div class="text-center d-flex justify-content-between mt-4"><p> Já possui cadastro?<a href="login" class="font-italic"> 
+                                        <u> Login!</u></a></p></div>
+                                <label for="cadastro" class="form-label">Não é cadastrado?<a href="cadastro"> Cadastre-se</a></label> 
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End -->
+
+            </div>
+        </div><!-- End -->
+
+    </div>
+</div>
+</body>
+</html>

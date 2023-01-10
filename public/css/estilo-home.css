@@ -1,0 +1,356 @@
+/*❤️Feito com amor por Daniele e Junior❤️*/
+
+/* Estilização do body */
+body{
+    background-color: #b8c1ec;
+    margin: 0;
+    padding: 0;
+}
+/* Cor e fonte da navbar */
+.navbar{
+    background-color: #232946;  
+
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Linhas do Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Espaço entre as linhas */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* Estado da navbar aberta */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/* Estado quando a navbar está "colapsada" */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+
+/* Cor do Toggler colapsado */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+
+/* Opacidade do botão para pesquisa */
+.btn {
+    opacity: 50%;
+}
+
+/* Ajustes de tela */
+@media(max-width:999px){
+    /* Para deixar o botao responsivo */
+    .botaozinho{
+        display: none;
+    }
+}
+
+
+/* Botão de pesquisa */
+#pesquisa{
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 0;
+    outline: 0;
+}
+
+/* Tamanho e cor do nome */
+.navbar-brand .img{
+    width: 10px;
+    height: auto;
+}
+#brand{
+    color: white;
+
+}
+
+.container1{
+    background-color: #232946;
+    min-height: 101vh;
+    display: table;
+    margin-top: -1px;
+}
+
+.linha1{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.mySlides h1{
+    font-family:sans-serif;
+    font-size: 8vmin;
+}
+
+.powermind{
+    font-family: 'Meddon', cursive;
+    font-size:5vmin;
+}
+
+.powermind2{
+    font-family: 'Meddon', cursive;
+}
+
+.container2{
+    background-color: #b8c1ec;
+    min-height: 101vh;
+}
+
+.linha2{
+    background-color: #b8c1ec;
+    border-radius: 50px;
+    color:black;
+}
+
+.linha2 h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.linha2 p{
+
+    text-align: justify;
+}
+
+.texto-roxo{
+    background-color:#232946;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.texto-azul{
+    background-color:#b8c1ec;
+    border-radius: 5px;
+    color:black;
+}
+
+.texto-rosa{
+    background-color: #eebbc3;
+    color: black;
+    border-radius: 5px;
+}
+
+.container3{
+    background-color: #eebbc3;
+}
+
+#buda{
+    border-radius: 50px;
+}
+
+.linha3 h1{
+    font-family: 'Kalam', cursive;
+    text-align: justify;
+    color:black;
+}
+
+.linha3 h2{
+    font-family: 'Kalam', cursive;
+    text-align: justify;
+    color:black;
+}
+
+.linha3 p{
+    color:black;
+    text-align: justify;
+}
+
+.linha4 h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.linha3 p{
+    text-align: justify;
+
+}
+
+.container4{
+    background-color: #232946;
+    color: white;
+}
+
+.linha4 p{
+    text-align: justify;
+}
+
+.container5{
+    background-color: #232946;
+}
+
+.linha5 h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.linha5 h2{
+    font-family: 'Kalam', cursive;
+}
+
+.linha5 p{
+    text-align: justify;
+}
+
+.container6, .container7{
+    background-color: #eebbc3;
+}
+
+
+.container7 h1{
+    font-family: 'Kalam', cursive;
+}
+
+.container7 h2{
+    font-family: 'Kalam', cursive;
+}
+
+.container7 p{
+    text-align: justify;
+}
+
+.container8 h2{
+    font-family: 'Kalam', cursive;
+}
+
+.container8 h3{
+    font-family: 'Kalam', cursive;
+}
+
+.container8 p{
+    text-align: justify;
+}
+
+.pare{
+    font-family: 'Kalam', cursive;
+}
+
+.container9 h1{
+    font-family: 'Kalam', cursive;
+}
+
+.container9 p{
+    text-align: justify;
+}
+
+.rodape{
+    background-color: #232946;
+    padding: 0;
+    margin-bottom: -15px;
+    color: white;
+}
+
+/* State when navbar is collapsed (START) */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+/* State when navbar is collapsed (END) */
+
+.rodape1{
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.conteudo-rodape{
+    accent-color: black;
+    margin-top: solid 20px white;
+}
+
+.conteudo-rodape a{
+    text-decoration: none;
+}
+
+.conteudo-rodape a :hover{
+    text-decoration: none;
+    color: white;
+}
+
+.chama{
+    border-color: none;
+}
+/* Breakpoints */
+
+/* State when navbar is collapsed (END) */
+
+/* Color of Toggler when collapsed */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+/* Telas menores que 320px */
+@media (max-width: 320px){
+
+}
+
+/* Telas entre 321px e 480px */
+@media(min-width: 321px) and (max-width:480px){
+    
+}
+
+/* Telas entre 481px e 768px */
+@media(min-width:481px) and (max-width:769px){
+   
+}
+
+/* Telas entre 769px e 1024px */
+@media(min-width:769px) and (max-width:1024px){
+    
+}
+
+/* Telas entre 1025px e 1200px */
+@media(min-width:1025px) and (max-width:1200px){
+    
+}
+
+/* Telas acima de 1200px */
+@media(min-width:1201px){
+   
+}

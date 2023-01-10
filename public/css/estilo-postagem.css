@@ -1,0 +1,142 @@
+.linha2{
+    background-color: white;
+}
+
+.navbar-brand{
+    width: 30px;
+    color: white;
+}
+.navbar{
+    background-color: #232946;  
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+/* Linhas do Toggler */
+.toggler-icon{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: all 0.2s;
+}
+
+/* Espaço entre as linhas */
+.middle-bar{
+    margin: 5px auto;
+}
+
+/* Estado da navbar aberta */
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/* Estado quando a navbar está "colapsada" */
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+
+/* Cor do Toggler colapsado */
+.navbar-toggler.collapsed .toggler-icon {
+    background-color: white;
+}
+
+.container1{
+    background-color: #232946;
+}
+
+.container1 h1{
+    font-family: 'Kalam', cursive;
+}
+
+#botaozinho{
+    background-color: white;
+}
+
+.container2 h5{
+    text-align:start;
+}
+
+.titulo{
+    font-family: 'Kalam', cursive;
+}
+
+.linha2{
+    border-radius: 30px;
+}
+
+.linha2 p{
+    text-align: justify;
+}
+
+.rodape1{
+    background-color: black;
+    color:white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.conteudo-rodape{
+    accent-color: black;
+    margin-top: solid 20px white;
+}
+
+.rodape h1, h3{
+    color: white;   
+}
+.powermind2{
+    font-family: 'Meddon', cursive;
+}
+
+.rodape p{
+    color:white;
+}
+
+.rodape a{
+    color:white;
+}
+
+.rodape hr{
+    color:white;
+}
+
+.conteudo-rodape a{
+    text-decoration: none;
+}
+
+.conteudo-rodape a :hover{
+    text-decoration: none;
+    color: white;
+}
+
+.chama{
+    border-color: none;
+}

@@ -1,0 +1,19 @@
+/*❤️Feito com amor por Daniele e Junior❤️*/
+
+/* Estilização do body */
+body{
+    background-color: #b8c1ec;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #232946;
+    height: 10vh;
+}
+
+.navbar-brand{
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 8vh;
+}

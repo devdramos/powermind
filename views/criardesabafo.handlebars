@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar desabafo</title>
+
+  <!-- Link CSS externo -->
+  <link rel="stylesheet" href="../css/estilo-criar-desabafo.css">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  {{!-- W3.CSS --}}
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  {{!-- Link de fonte --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+
+  {{!-- Link de fonte --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #232946;">
+<div class="container-fluid titulo pt-5 text-white">
+  <h1>Compartilhe aqui o seu desabafo com outros usuários!</h1>
+  <p>Atenção: Não poste nada ofensivo, seus posts estarão sujeitos a exclusão ou até banimento do usuário!</p>
+</div>
+<div class="container col-sm-9">
+    <form action="/criardesabafo/inserepost" method="post">
+<input type="hidden" name="id_post" value="{{id_post}}">
+<input type="hidden" name="nome" value="{{nome}}">
+<input type="hidden" name="email" value="{{email}}">
+
+{{!-- <div class="mb-3">
+    <input type = "checkbox" id = "relacionamento" name = "relacionamento" value = "relacionamento">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Relacionamento</h3></label>
+
+    <input type = "checkbox" id = "escola" name = "escola" value = "escola">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Escola</h3></label>
+
+    <input type = "checkbox" id = "trabalho" name = "trabalho" value = "trabalho">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Trabalho</h3></label>
+
+    <input type = "checkbox" id = "familia" name = "familia" value = "familia">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Familia</h3></label>
+
+    <input type = "checkbox" id = "sexualidade" name = "sexualidade" value = "sexualidade">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Sexualidade</h3></label>
+
+    <input type = "checkbox" id = "dicas" name = "dicas" value = "dicas">
+    <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Dicas</h3></label>
+</div> --}}
+{{!-- <select name="category" class="ap-pro-select  ap-required-field" data-required-msg="Não escolheste uma categoria">
+<option value="">----</option><option value="1841">Desabafos Adultos</option><option value="1210">Problemas Amorosos</option><option value="1219">Problemas da Vida</option><option value="1225">Problemas de Adolescente</option><option value="1232">Problemas de Amizade</option><option value="1216">Problemas de Aparência</option><option value="1224">Problemas de Emprego</option><option value="1824">Problemas de Infidelidade</option><option value="1212">Problemas Familiares</option><option value="1843">Problemas LGBT</option><option value="1338">Problemas no Casamento</option><option value="1397">Problemas no Namoro</option><option value="1829">Problemas Religiosos</option></select> --}}
+<div class="form-group mb-3">
+ <input type="hidden" class="form-control rounded-pill border-0 shadow-sm px-4" id="avaliacao" aria-describedby="emailHelp" name="avaliacao" value="bosta">
+</div>
+<div class="form-group mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Categoria</h3></label>
+                                    <select name="categoria">
+                                    <option >Família</option>
+                                    <option >Escola</option>
+                                    <option >Relacionamento</option>
+                                    <option >Emprego</option>
+                                    <option >Sexualidade</option>
+                                    <option >Dicas e conselhos</option>
+                                    </select>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Título do desabafo</h3></label>
+  <textarea class="form-control rounded-4" placeholder="Digite aqui o título do desabafo" id="exampleFormControlTextarea1" rows="1" name="titulo"></textarea>
+</div>
+  <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label" id="titulos"><h3>Texto</h3></label>
+  <textarea class="form-control rounded-4" placeholder="Digite aqui o texto do desabafo" id="exampleFormControlTextarea1" rows="5" name="postagem"></textarea>
+</div>
+<div class="form-group mb-3 pt-3">
+   <label for="aprovado" class="form-label">Aprovado</label>
+    <input type="hidden" class="form-control rounded-pill border-0 shadow-sm px-4" id="aprovado" name="aprovado">
+</div>
+  <button type="submit" class="btn btn-primary rounded-pill">Enviar</button>
+</form>
+</div>
+</body>
+</html>

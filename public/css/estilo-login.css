@@ -1,0 +1,65 @@
+/*❤️Feito com amor por Daniele e Junior❤️*/
+
+/*Margin e padding pra página inteira*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+}
+
+
+/*Frase de aviso debaixo do label*/
+#emailHelp{
+    color: white;
+}
+
+/*Estilização do título*/
+h2{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+/*stilização do link de direcionamento caso tenha esquecido a senha*/
+#senha-esq{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*Estilização pra deixar o botão grande*/
+#botao{
+    width: 100%;
+}
+
+.login,
+.image {
+  min-height: 100vh;
+  color: white;
+}
+
+.bg-image {
+  background-image: url('../img/maozinha.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #232946;
+  background-position: bottom;
+  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  background-position-y: 100%;
+}
+
+h3{
+    font-family: 'Kalam', cursive;
+    }
+    
+#text-pqn{
+    color: white;
+}
+

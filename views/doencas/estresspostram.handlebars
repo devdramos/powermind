@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estresse Pós-traumático</title>
+
+  <!-- Link CSS externo -->
+  <link rel="stylesheet" href="../css/estilo-cada-doenca.css">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  {{!-- W3.CSS --}}
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  {{!-- Link de fonte --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+
+  {{!-- Link de fonte --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #232946">
+  {{!-- Inicio da navbar --}}
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top justify-content-lg-center col-12" id="navnav">
+        <div class="container-fluid">
+          <!--Logo da Navbar-->
+          <a class="navbar-brand" id="brand">
+            Power Mind
+          </a>
+          <!--Botão de quando encolhe a tela-->
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav col-12 justify-content-around">
+                 <li class="nav-item">
+                <a class="nav-link" href="/index">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                    </svg>
+                  Home
+                </a>
+              </li>
+              <!--Primeiro Item - Doenças-->
+              <li class="nav-item">
+                <a class="nav-link" href="/doencas">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bandaid-fill" viewBox="0 0 16 16">
+                    <path d="m2.68 7.676 6.49-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492.001-.002Zm5.71-2.858a.5.5 0 1 0-.708.707.5.5 0 0 0 .707-.707ZM6.974 6.939a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707ZM5.56 8.354a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm2.828 2.828a.5.5 0 1 0-.707-.707.5.5 0 0 0 .707.707Zm1.414-2.121a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.706-.708.5.5 0 0 0 .707.708Zm-4.242.707a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707Zm1.414-.707a.5.5 0 1 0-.707-.708.5.5 0 0 0 .707.708Zm1.414-2.122a.5.5 0 1 0-.707.707.5.5 0 0 0 .707-.707ZM8.646 3.354l4 4 .708-.708-4-4-.708.708Zm-1.292 9.292-4-4-.708.708 4 4 .708-.708Z"/>
+                  </svg>
+                  Doenças
+                </a>
+              </li>
+              <!--Segundo Item - Chat-->
+              <li class="nav-item">
+                <a class="nav-link" href="/posts">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                    <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                  </svg>
+                  Desabafos
+                </a>
+              </li>
+              <!--Terceiro Item - Sobre-->
+              <li class="nav-item">
+                <a class="nav-link" href="/projeto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
+                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>
+                  Projeto
+                </a>
+              </li>
+              {{!-- Sétimo Item - Loja --}}
+          
+              <!--Quinto Item - Barra de pesquisa-->
+             
+            <!--Sexto Item - Login-->
+
+            </ul>
+
+          </div>
+          
+        </div>
+  </nav>
+              <hr class="text-white m-0 p-0"></hr>
+
+{{!-- Primeiro Container --}}
+<div class="container-fluid container1">
+    <div class="row linha1 text-white justify-content-center">
+      <div class="col-sm-9 oque-e pt-5">
+        <h1>O que é Transtorno de Estresse Pós-Traumático?</h1>
+      <p>O transtorno do estresse pós-traumático (TEPT) é um distúrbio de ansiedade que se manifesta em decorrência de o portador ter sofridos experiências de atos violentos ou de situações traumáticas</p>
+<div class="col-sm text-center p-4">
+<iframe width="50%" id="video" height="315" src="https://www.youtube.com/embed/yHQOMXOH3rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+  <p>O transtorno do estresse pós-traumático (TEPT) é um distúrbio da ansiedade caracterizado por um conjunto de sinais e sintomas físicos, psíquicos e emocionais em decorrência de um evento extremamente traumático, como participar numa guerra, ser raptado, assaltado ou sofrer violência doméstica, dentre outros. Quando se recorda do fato, ele revive o episódio, como se estivesse ocorrendo naquele momento e com a mesma sensação de dor e sofrimento que o agente estressor provocou. Essa recordação, conhecida como revivescência, desencadeia alterações neurofisiológicas e mentais.</p> 
+
+  <p>O mais comum dos exemplos é de ex-veteranos de guerra. Existe uma previsão de que entre <a href="https://www.ptsd.va.gov/public/PTSD-overview/basics/how-common-is-ptsd.asp">11% e 20% dos militares </a>que serviram nas operações Liberdade Iraquiana e Liberdade Duradoura vão sofrer de TEPT em algum momento da vida.</p>  
+</div>
+<div class="col-sm-0" ></div>
+</div>
+</div>
+{{!-- Segundo container --}}
+<div class="accordion">
+{{!-- Primeiro Accordion --}}
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align " id="botao">
+Causas</button>
+<div id="Demo1" class="w3-container w3-hide w3-animate-opacity">
+  <p>As causas do estresse pós-traumáticas são infinitas e muito variadas. As situações traumáticas geradoras do transtorno podem ser ameaças à vida em sua dimensão física, dimensão psíquica, dimensão social, entre outras. Vários tipos de experiências aterrorizantes ou ameaçadoras podem levar ao surgimento do estresse pós-traumático, tais como:</p>
+    <ul>
+      <li>Violência física ou sexual</li>
+      <li>Assalto ou sequestro</li>
+      <li>Acidente de carro</li>
+      <li>Desastres naturais</li>
+      <li>Diagnóstico de doença que ameace a vida</li>
+    </ul>
+  <p>
+    Em todas essas dimensões pode haver situações de extrema violência ou ameaça e de certa forma produzirem um quadro de estresse pós-traumático. Vale destacar que mesmo quem não foi vítima direta de tais situações pode receber o diagnóstico. Testemunhar uma agressão ou ser informado que um familiar sofreu um acidente grave, por exemplo, também são possíveis fatores desencadeantes. 
+  </p>
+
+  <p>Recente pesquisa desenvolvida pela UNIFESP (Universidade Federal do Estado de São Paulo) e por outras universidades brasileiras, em parceria com pesquisadores da Fundação Oswaldo Cruz, levantou a hipótese de a causa do transtorno estar no desequilíbrio dos níveis de cortisol ou na redução de 8% a 10% do córtex pré-frontal e do hipocampo, áreas localizadas no cérebro. 
+  </p>
+  
+  <p>
+Embora qualquer pessoa exposta a algum tipo de trauma psicológico possa desenvolver o distúrbio, mulheres são duas vezes mais atingidas do que homens.
+</p>
+</div>
+
+{{!-- Segundo Accordion --}}
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-left-align " id="botao">
+Sintomas</button>
+<div id="Demo2" class="w3-container w3-hide w3-animate-opacity">
+  <p>A primeira aparição dos sintomas é variável, dependendo da capacidade da pessoa de administrar o estresse. Eles podem surgir tanto logo após o evento traumático quanto seis meses depois. Os sintomas podem ser divididos em:</p>
+  <ul>
+    <li>Reexperiência traumática:  reviver involuntariamente o trauma através de memórias angustiantes e repetitivas, pesadelos ou flashbacks. Essas reações dissociativas fazem com que ela sinta a mesma dor vivida na ocasião e podem causar <a href="sindromedopanico">ataques de pânico.</a></li>
+    <li>Esquiva e isolamento social: a pessoa evitam quaisquer estímulos associados ao acontecimento traumático, como lugares, pessoas e atividades que podem trazer recordações dolorosas. A pessoa também pode ser incapaz de lembrar ou falar sobre o ocorrido.</li>
+    <li>Excitação exagerada:  inclui ficar em estado de alerta constante, explosões de raiva, dificuldade para dormir e para se concentrar.  Também incluem comportamentos imprudentes que podem resultar em ferimentos ou riscos para a própria vida e a dos outros também são sintomas comuns dessa categoria.</li>
+    <li>Efeitos negativos no humor e pensamentos: incluem ter dificuldade para lembrar vários momentos da situação traumática, sentir menos interesse por atividades agradáveis, sentimentos distorcidos como o de culpa pelo que aconteceu e pensamentos negativos sobre si próprio.</li>
+  </ul>
+  <p>É importante ressaltar que não são todos os portadores que apresentam todos os sintomas, eles variam de pessoa para pessoa, bem como se a pessoa possui gatilhos mais fortes ou não.</p>
+</div>
+
+
+{{!-- Terceiro Accordion --}}
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-left-align " id="botao">
+Diagnóstico e tratamento</button>
+<div id="Demo3" class="w3-container w3-hide w3-animate-opacity">
+  <p>O DSM-IV (Manual de Diagnóstico dos Distúrbios Mentais) e o CID-10 (Classificação Internacional das Doenças) estabeleceram os critérios para o diagnóstico do transtorno do estresse pós-traumático.
+  </p>
+
+  <p>O primeiro requisito é identificar o evento traumático (agente estressor), que tenha representado ameaça à vida do portador do distúrbio ou de uma pessoa querida e perante o qual se sentiu impotente para esboçar qualquer reação. Os outros levam em conta os sintomas característicos do TEPT.
+  </p>
+
+  <p>Para ser considerado um critério diagnóstico, essa perturbação deve causar sofrimento significativo ou prejuízo no funcionamento social ou ocupacional ou em outras áreas importantes da vida do indivíduo.
+  </p>
+
+  <p>O tratamento é feito com auxílio psicológico e/ou psicoterápico, com o objetivo de enfrentar o medo do paciente e controlar a ansiedade. Em alguns casos, pode ser recomendado o uso de medicamentos antidepressivos ou ansiolíticos. 
+  </p>
+
+  <p>A recuperação do TEPT é um processo gradual cuja duração e velocidade dependem do relacionamento de cada paciente com o trauma. É preciso ter paciência para que mudanças positivas no comportamento, estado emocional e pensamentos comecem a ser feitas.</p>
+</div>
+
+{{!-- Quarto Accordion --}}
+<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-left-align " id="botao">
+O que fazer caso você tenha TEPT?</button>
+<div id="Demo4" class="w3-container w3-hide w3-animate-opacity">
+  <ul>
+    <li>Retomar o seu senso de propósito: É importante lembrar a si mesmo de que você é forte e desenvolver estratégias para lidar com os sintomas e momentos ruins. Uma das melhores maneiras de alcançar esses objetivos é se colocar em uma posição de controle sobre a sua própria vida.
+    </li>
+    <li>Buscar formas de controlar o estresse: Técnicas de relaxamento e de respiração profunda, bem como a prática de atividades que reduzem e controlam a ansiedade (meditação, caminhada, yoga, hobbies, por exemplo) são fundamentais.
+    </li>
+
+    <li>Ter hábitos saudáveis
+    </li>
+
+    <li>Dormir e acordar nos mesmos horários</li>
+<li>Praticar exercícios físicos regularmente</li>
+<li>Ter uma dieta balanceada</li>
+<li>Cultivar relacionamentos de qualidade</li>
+<li>Reservar um tempo para o relaxamento diariamente</li>
+<li>Ser grato por estar bem hoje</li>
+<li>Evitar álcool</li>
+<li>Elevar a autoestima através da terapia</li>
+
+    <li>Use a imaginação guiada: Pense em um lugar que você se sinta em paz e relaxado. Enquanto pensa nesse lugar, continue adicionando detalhes à cena.
+      Foque toda a sua mente no campo da imaginação. Esse tipo de atividade é muito eficiente para desligar sua mente dos sintomas da ansiedade e acalmar a respiração.
+    </li>
+  </ul>
+</div>
+
+{{!-- Quinto Accordion --}}
+<button onclick="myFunction('Demo5')" class="w3-button w3-block w3-left-align " id="botao">
+Como ajudar aguém dutante uma crise de TEPT?</button>
+<div id="Demo5" class="w3-container w3-hide w3-animate-opacity align-items-center">
+ <ul>
+  <li>Aproxime-se da pessoa devagar.</li>
+  <li>Pergunte para a pessoa o seu nome, e de forma constante, sempre chamá-la pelo nome.</li>
+  <li>Procure o contato físico que pode ser muito benéfico, mas apenas para estados não agressivos.</li>
+  <li>Ouvir com atenção a pessoa e tentando recapitular o que aconteceu, o contexto sempre é importante.</li>
+  <li>Mantenha as necessidades básicas da pessoa, como água, panos umedecidos, agasalhos, tudo o que for necessário e forneça um ambiente seguro.</li>
+  <li>Ajude a encontrar seus parentes para que possam ir até o local.</li>
+  <li>Permaneça calmo e transpareça essa calma para a pessoa. </li>
+  <li>Evite deixar a pessoa mais nervosa ainda.</li>
+ </ul>
+</div>
+</div>
+<div class="container-fluid rodape">
+  <div class="p-5 row conteudo-rodape justify-content-around pb-5">
+    <hr></hr>
+  <div class="col-sm-3">
+    <h1 class="powermind2">Power Mind</h1>
+</div>
+<div class="col-sm-2">
+    <h3>Início</h3>
+    <a href="index"><p>Home</p></a>
+    <a href="doencas"><p>Doenças</p></a>
+    <a href="posts"><p>Desabafos</p></a>
+    
+</div>
+<div class="col-sm-2">
+    <h3>Sobre Nós</h3>
+    <p>Informações da empresa</p>
+    <p>Contatos</p>
+</div>
+<div class="col-sm-2">
+    <h3>Suporte</h3>
+    <p>Email</p>
+</div>
+<div class="col-sm-2">
+<a href="https://discord.gg/qUufzQny6h">
+  <svg xmlns="http://www.w3.org/2000/svg"  height="auto" fill="currentColor" class="bi bi-discord col-3" viewBox="0 0 16 16">
+  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+</svg>
+</a>
+<a href="doencas">
+  <svg xmlns="http://www.w3.org/2000/svg"  height="auto" fill="currentColor" class="bi bi-facebook col-3" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg>
+</a>
+<a href="doencas">
+  <svg xmlns="http://www.w3.org/2000/svg" height="auto" fill="currentColor" class="bi bi-whatsapp col-3" viewBox="0 0 16 16">
+  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+</svg>
+</a>
+
+</div>
+</div>
+ 
+
+</div>
+<div class="container-fluid rodape1">
+  <div class="row align-content-center">
+    <div class="col-sm-11">
+  <p class="text-center">@ 2022  Copyright - Programadores Daniele e Junior</p>
+  </div>
+  </div>
+</div>
+
+</body>
+{{!-- Script para o Accordion --}}
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+      x.previousElementSibling.className += " w3-white";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+     x.previousElementSibling.className =
+  x.previousElementSibling.className.replace("w3-pink", "");
+  }
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

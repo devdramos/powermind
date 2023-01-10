@@ -1,0 +1,17 @@
+.titulo h1{
+    color:white;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+}
+
+.titulo p{
+    text-align: center;
+}
+
+#botaozinho{
+    background-color: white;
+}
+
+#titulos{
+    color: white;
+}

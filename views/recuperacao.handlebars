@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!--❤️Feito com amor por Daniele e Junior❤️-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login</title>
+
+	 <!--Link CSS externo-->
+    <link rel="stylesheet" href="../css/estilo-login.css">
+
+	<!--Bootstrap-->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    {{!-- Link de fonte --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+
+    {{!-- Link de fonte --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #232946">
+<div class="container-fluid">
+    <div class="row no-gutter justify-content-around">
+        <!-- The image half -->
+        <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+        <!-- The content half -->
+        <div class="col-md-6" id="colunacor">
+            <div class="login d-flex align-items-center">
+
+                <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-8 mx-auto">
+                            {{#each dados2}}
+                            <h3 class="display-4">Olá {{nome}}</h3>
+                            <p class="text mb-4" id="text-pqn">Vimos que você esqueceu sua senha, para redefini-la por favor digite abaixo a senha mais próxima que você lembra:</p>
+                            <form>
+                                  <div class="form-group mb-3">
+                                    <label class="form-label">Senha antiga:</label>
+                                    <input type="text" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Digite sua senha">
+                                  </div>
+                                <button type="submit" class="btn btn-primary btn-block mb-2 rounded-pill shadow-sm"><a href="/usuario/alterarsenha/{{email}}">Enviar</a></button>
+
+                               {{/each}}
+                                <div class="text-center d-flex justify-content-between mt-4"><p> Já possui cadastro?<a href="login" class="font-italic"> 
+                                        <u> Login!</u></a></p></div>
+                                <label for="cadastro" class="form-label">Não é cadastrado?<a href="cadastro"> Cadastre-se</a></label> 
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End -->
+
+            </div>
+        </div><!-- End -->
+
+    </div>
+</div>
+</body>
+</html>
